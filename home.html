@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Resposive Mobille</title>
+	<link rel="stylesheet" type="text/css" href="./stylesheet.css">
+</head>
+<body id="body">
+	<header id="header">
+		<div class="smalllogo">
+			<a href="#welcome-secton" class="logolink">
+				<h2><i class="fa fa-bars"></i>coding sumit</h2>
+			</a>
+		</div>
+
+		<button class="nav-toggle">
+			<span class="hamburger"></span>
+		</button>
+
+		<nav class="nav" id="navbar">
+			<div class="logo">
+				<a href="#" id="logo">
+					<h1></i>coding sumit</h1>
+				</a>
+			</div>	
+
+			<ul class="nav__list" id="navlinkitems">
+				<li class="nav__item">
+					<a href="#home-section" class="nav__link" id="home">Home</a>
+				</li>
+
+				<li class="nav__item">
+					<a href="#about-section" class="nav__link" id="about">About</a>
+				</li>
+
+				<li class="nav__item">
+					<a href="#skills-section" class="nav__link" id="service">Skills</a>
+				</li>
+
+				<li class="nav__item">
+					<a href="#work-section" class="nav__link" id="work">work</a>
+				</li>
+
+				<li class="nav__item">
+					<a href="#contact" class="nav__link" id="contact">Contact</a>
+				</li>
+
+			</ul>
+
+		</nav>
+			<label for="menu-toggle" class="menu-toggler">
+				<span class="fa fa-bars"></span>
+			</label>
+
+	</header>
+
+	<!-- <div class="container">
+		<div class="neu">
+			
+		</div>
+	</div> -->
+
+	<!-- <div class="banner">This is a banner!</div> -->
+
+
+
+	<!-- <form>
+  <div id="formbox">
+  <label>Type something:</label>
+  <input type="text">
+  </div>
+</form> -->
+
+<section class="section-one">
+	<div class="ex1">div 1</div>
+</section>
+<section class="section-two">
+	<div class="ex2">div 2</div>
+</section>
+<section class="section-three">
+	<div class="ex3">div 3</div>
+</section>
+<section class="section-four">
+
+	<div class="ex4"><p>div 4</p>
+<img src="./images/Marketing 05.jpg">
+	</div>
+</section>
+
+<footer class="footer">
+	<section class="section-footer">
+		<div class="info">
+			<h3>Documentos</h3>
+			<p>Termo de Uso</p>
+			<p>Privacidade</p>
+			<p>Uso de Cookit</p>
+			<p>Política de Dados</p>
+			
+		</div>
+		<div class="redes-sociais">
+			
+		</div>
+
+
+	</section>
+
+	<section class="license">
+		Dev:Isaque Menzes | Todos os direitos reservados
+	</section>
+	
+</footer>
+
+
+
+<script type="text/javascript">
+	window.onscroll = function () {
+		scrollFuncion()
+	};
+	function scrollFunction(){
+		document.getElementById('navbar').style.background = '#fff';
+	}
+
+	const navToggle = document.querySelector('.nav-toggle');
+	const navLinks = document.querySelectorAll('.nav__link');
+
+	navToggle.addEventListener('click', () => {
+		document.body.classList.toggle('nav-open');
+	});
+
+	navLinks.forEach((link) => {
+		link.addEventListener('click', () => {
+			document.body.classList.remove('nav-open');
+		});
+
+	});
+</script>
+</body>
+</html>
